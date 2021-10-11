@@ -12,6 +12,11 @@
 
 .name {
   text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+}
+
+.motto {
   text-align: center;
   color: white;
   font-family: "Noto Sans", sans-serif;
