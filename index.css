@@ -30,6 +30,8 @@
   padding: 0px 20%;
 }
 
-.sports {
-  color: rgb(0, 89, 255);
+.ja {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
 }
