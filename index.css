@@ -4,8 +4,7 @@
 }
 
 .header {
-  background-color: rgb(0, 89, 255);
-  padding-top: 5em;
+  padding-top: 2.5em;
   padding-bottom: 5em;
   margin-bottom: 2.5em;
 }
@@ -29,9 +28,42 @@
   justify-content: space-between;
   padding: 0px 20%;
 }
-
 .ja {
-  list-style-type: none;
+  display: block;
+  margin: auto;
+}
+
+.sl {
   display: flex;
-  justify-content: right;
+  list-style-type: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+.sports {
+  padding-left: 3rem;
+  padding-bottom: 1.5rem;
+  color: white;
+}
+.u15 {
+  display: block;
+}
+.sborder {
+  border-width: 0rem 0.1rem 0rem 0rem;
+  border-style: solid;
+  border-color: white;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.body {
+  background: rgb(0, 89, 255);
+  background: linear-gradient(
+    176deg,
+    rgba(0, 89, 255, 1) 38%,
+    rgba(9, 187, 223, 1) 70%
+  );
+}
+.sborder2 {
+  padding: 1rem 1rem 1rem 1rem;
 }
