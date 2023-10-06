@@ -1,73 +1,137 @@
+
+@keyframes gradientBg {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header {
-  padding-top: 2.5em;
-  padding-bottom: 5em;
-  margin-bottom: 2.5em;
+body {
+  font-size: 16px;
+  color: #ffffff; 
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #1e528e, #295582);
+  background-size: 400% 400%;
+  animation: gradientBg 15s ease infinite;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.name {
-  text-align: center;
-  font-family: "Noto Sans", sans-serif;
-  color: white;
-}
-
-.motto {
-  text-align: center;
-  color: white;
-  font-family: "Noto Sans", sans-serif;
-  padding-bottom: 2em;
-}
-
-.contacts {
-  list-style-type: none;
+/* Navbar styling */
+nav {
   display: flex;
-  justify-content: space-between;
-  padding: 0px 20%;
-}
-.ja {
-  display: block;
-  margin: auto;
+  justify-content: center;
+  padding: 20px 40px;
 }
 
-.sl {
+nav a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #ffffff; 
+  padding-bottom: 5px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: #3a6ea5; 
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #3a6ea5; 
+  transition: width 0.3s;
+}
+
+/* Main content styling */
+.main-content {
   display: flex;
-  list-style-type: none;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 1.5rem;
-  color: white;
-}
-.hedin {
-  padding-left: 3rem;
-  padding-bottom: 1.5rem;
-  color: white;
-}
-.u15 {
-  display: block;
-}
-.sborder {
-  border-width: 0rem 0.1rem 0rem 0rem;
-  border-style: solid;
-  border-color: white;
-  padding: 1rem 1rem 1rem 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
 
-.body {
-  background: rgb(0, 89, 255);
-  background: linear-gradient(
-    176deg,
-    rgba(0, 89, 255, 1) 38%,
-    rgba(9, 187, 223, 1) 70%
-  );
-}
-.sborder2 {
-  padding: 1rem 1rem 1rem 1rem;
+.profile-content {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4); 
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
 }
 
-.apc {
-  list-style-type: none;
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #3a6ea5;
+  margin: 0 auto 20px auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-description {
+  font-size: 1.3rem;
+  margin: 20px 0;
+  font-weight: lighter;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cta a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ffffff; 
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta a.email, .cta a.call, .cta a.nsca {
+  background-color: #3a6ea5; 
+  color: #ffffff; 
+}
+
+.cta a.email:hover, .cta a.call:hover, .cta a.nsca:hover {
+  background-color: #1e3c72; 
+  transform: scale(1.05);
 }
