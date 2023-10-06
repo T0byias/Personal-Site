@@ -95,13 +95,14 @@ nav a::after {
 }
 
 .profile-picture {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background-color: #3a6ea5;
   margin: 0 auto 20px auto;
   background-size: cover;
   background-position: center;
+  background-image: url('JA.png'); 
+
 }
 
 .profile-description {
