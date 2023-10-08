@@ -1,0 +1,162 @@
+body {
+    font-size: 16px;
+    color: #ffffff; 
+    background: linear-gradient(45deg, #1e3c72, #2a5298, #1e528e, #295582);
+    background-size: 400% 400%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100; 
+}
+
+#top-logo {
+    width: 100px; 
+    height: auto; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #ffffff; 
+    padding-bottom: 5px;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  nav a:hover {
+    color: #3a6ea5; 
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #3a6ea5; 
+    transition: width 0.3s;
+  }
+
+.timeline {
+    position: relative;
+    margin-top: 50px;
+    padding: 0 10%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: white;
+}
+
+.team {
+    display: flex;
+    margin-bottom: 40px;
+    width: 50%;
+    position: relative;
+    align-items: center; 
+}
+
+.team .info {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+    width: 80%;
+    flex: 1; 
+    text-align: right; 
+}
+
+.team .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 15px;
+}
+
+.team.left {
+    justify-content: flex-end;
+    right: 1.5%;
+}
+
+.team.left .info {
+    order: 1;
+    margin-left: 15px;
+    text-align: left; /* Left align text for left boxes */
+}
+
+.team.right {
+    left: 51.5%;
+}
+
+.team.right .info {
+    order: -1;
+    margin-right: 15px;
+}
+
+.info h2, .info p {
+    margin: 0;
+    padding: 0;
+}
+
+.title-bar {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.stats-section {
+    margin-top: 40px;
+    padding: 20px 10%;
+    margin-bottom: 20px; 
+}
+
+.stats-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.stat h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 24px;
+}
