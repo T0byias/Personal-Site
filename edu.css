@@ -1,0 +1,78 @@
+@import url('styles.css');
+
+.education-content {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4); 
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.highschool-logo img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.highschool-logo img:hover {
+    transform: scale(1.05);
+}
+
+.gpa {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffffff; 
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.honors, .ap {
+    width: 45%; /* Adjust based on your preference */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 110, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.honors:hover, .ap:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.honors h2, .ap h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: #ffffff,; 
+}
+
+.honors ul, .ap ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #ffffff; 
+}
+
+@media screen and (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+    }
+
+    .honors, .ap {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+  
